@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     'LICENSE.txt'
   ]
   s.requires_arc = true
-  s.compiler_flags = ['-fstack-protector', '-mssse3']
+  s.compiler_flags = ['-fstack-protector']
   s.info_plist = {
     'CFBundleIdentifier' => 'com.kulakov.ShortcutRecorder'
   }
