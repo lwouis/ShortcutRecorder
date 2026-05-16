@@ -154,7 +154,7 @@ typedef TISInputSourceRef (*_SRKeyCodeTransformerCacheInputSourceCreate)(void);
     if (_inputSource)
         return _inputSource;
     else
-        return (__bridge_transfer id)_inputSourceCreator();
+        return (__bridge id)CFAutorelease(_inputSourceCreator());
 }
 
 - (nullable NSString *)translateKeyCode:(SRKeyCode)aKeyCode
